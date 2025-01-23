@@ -1,5 +1,3 @@
-// const { jsPDF } = window.jspdf;
-
 function initialize() {
     const menuItems = document.querySelectorAll('.menu__item');
     const sections = document.querySelectorAll('.section');
