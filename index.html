@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аналитический Отчет</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js">
+    </script>
+
+</head>
+<body>
+  <header class="header">
+    <span class="header__title">Аналитический Отчет</span>
+  </header>
+
+  <main class="container">
+    <div class="panel flex gap-small">
+      <div class="panel__nav flex gap-small">
+        <img src="./icons/arrow.png" class="icon" alt="Назад">
+        <div class="panel__nav-link">Вернуться к отчетам</div>
+      </div>
+      <button class="panel__button flex gap-small">
+        <img src="./icons/pdf.png" class="icon" alt="Скачать PDF">
+        <span class="panel__button-text">Скачать отчет</span>
+      </button>
+    </div>
+
+    <div class="data">
+      <span class="data__title">Данные запроса</span>
+      <div class="data__desc">
+        <p class="data__desc-title">Номер транспортного средства</p>
+        <p class="data__desc-value">а111нх125</p>
+      </div>
+    </div>
+
+    <div class="content flex gap-large">
+      <nav class="menu flex">
+        <button class="menu__item menu__item--active flex gap-small" data-target="section-1">
+          <img src="./icons/circle.png" class="icon" alt="Информация">
+          <span>Информация о госзнаке</span>
+        </button>
+        <button class="menu__item flex gap-small" data-target="section-2">
+          <img src="./icons/passport.png" class="icon" alt="Лица">
+          <span>Идентифицированные лица</span>
+        </button>
+      </nav>
+
+      <section id="section-1" class="section section--active">
+        <h1 class="info__title">Информация о госзнаке</h1>
+        <table>
+          <tbody>
+            <tr>
+              <td class="info__label">Номер</td>
+              <td class="info__value">ГРЗ a111нх125</td>
+            </tr>
+            <tr>
+              <td class="info__label">Выявленные лица</td>
+              <td class="info__value">
+                <a href="#">Гудимов Павел Александрович, 18.07.1981 г.р.</a>
+                <span class="info__age">• 34 года</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="info__subtitle">Установленные лица</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Внутренние паспорта</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="#" class="info__link">Гудимов Павел Александрович, 18.07.1981 г.р.</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" class="info__link">Гудимов Павел Александрович, 18.07.1981 г.р.</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" class="info__link">Гудимов Павел Александрович, 18.07.1981 г.р.</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="section-2" class="section">
+        <h1 class="identification__title">Идентифицированные лица</h1>
+        <p class="identification__summary">Идентифицировано 2 лица</p>
+        <div class="identification__object">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Объект № 1 / 2021</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="identification__label">Полное имя</td>
+                <td class="identification__value identification__value--highlighted">
+                  <a href="#" class="info__link">
+                    Илькун Виктор Антонович
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="identification__label">Дата рождения</td>
+                <td class="identification__value" >20 января 1990 года <span class="identification__age">• 34 года</span></td>
+              </tr>
+              <tr>
+                <td class="identification__label">Транспортные средства</td>
+                <td class="identification__value">
+                  <div class="identification__vehicle flex gap-small">
+                    <span class="tag flex">
+                      <img src="./icons/calendar.png" class="tag__icon" alt="Год">
+                      <span class="tag__text">2021</span>
+                    </span>
+                    <span class="identification__vehicle-details">ДРУГАЯ МАРКА TOYOTA CROWN ГРЗ A111HX125</span>
+                    <span class="identification__vehicle-number">СТС 235234634673476</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="identification__label">Записей в базах</td>
+                <td class="identification__value identification__value--highlighted">3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="identification__object">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Объект № 1 / 2021</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="identification__label">Полное имя</td>
+                <td class="identification__value identification__value--highlighted">
+                  <a href="#" class="info__link">
+                    Илькун Виктор Антонович
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="identification__label">Дата рождения</td>
+                <td class="identification__value" >20 января 1990 года <span class="identification__age">• 34 года</span></td>
+              </tr>
+              <tr>
+                <td class="identification__label">Транспортные средства</td>
+                <td class="identification__value">
+                  <div class="identification__vehicle flex gap-small">
+                    <span class="tag flex">
+                      <img src="./icons/calendar.png" class="tag__icon" alt="Год">
+                      <span class="tag__text">2021</span>
+                    </span>
+                    <span class="identification__vehicle-details">ДРУГАЯ МАРКА TOYOTA CROWN ГРЗ A111HX125</span>
+                    <span class="identification__vehicle-number">СТС 235234634673476</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="identification__label">Записей в базах</td>
+                <td class="identification__value identification__value--highlighted">3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="panel__nav flex gap-small">
+      <img src="./icons/arrow.png" class="icon" alt="Назад">
+      <div class="panel__nav-link">Вернуться к отчетам</div>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
